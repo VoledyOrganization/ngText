@@ -20,7 +20,7 @@ input[type=button]{ outline: none!important;}
 .v-left{ width: 10%; height: 100%; background: #F8F8F8; position: fixed; left: 0; border-right: solid 1px #E7E7E7;}
 .v-content{ width: 88%; margin-left: 11%;}
 .v-content .rowBottom{ margin-bottom: 20px;}
-.v-content .rowBottom a{ font-size: 12px; padding: 8px 15px; color: #fff; border-radius: 3px; background-color: #4990E2; border-color: #4990E2; margin-right: 5px;}
+.v-content .rowBottom a{ cursor: pointer; font-size: 12px; padding: 8px 15px; color: #fff; border-radius: 3px; background-color: #4990E2; border-color: #4990E2; margin-right: 5px;}
 .v-content .anjuTab{ width:100%; margin: 18px auto 0;}
 .v-content .anjuTab b{ color: #333;}
 

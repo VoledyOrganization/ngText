@@ -16,6 +16,7 @@ app.controller('appCtrl', ['$scope', function ($s) {
     //新增学员
     $s.addStudent=function(){
         $(".editCoach").fadeIn("fast");
+        $s.editCoach=true;
     }
 
     //分配课程
