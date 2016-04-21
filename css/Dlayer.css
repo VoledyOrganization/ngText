@@ -1,0 +1,52 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,img,pre,code,form,fieldset,legend,input,span,textarea,p,blockquote,th,td,img {margin:0; padding:0; border:0;}
+
+/*公共代码*/
+.Dclear{ clear: both;}
+.Dlayer .popup{ margin: 20px;}
+.Dlayer .popup input{ padding:15px 20px; margin: 0 10px; background: #F2F2F2; border: 1px solid #aaa; outline: none; cursor: pointer;}
+
+/*弹出层*/
+.DlayerShade{ width: 100%; height: 100%; position: fixed; top: 0; background-color: rgba(0,0,0,0.2); z-index: 998;}
+.DlayerPopum{ width: 310px; height: 150px;  border: 1px solid #eee; border-radius: 2px; background: #fff; position: absolute; left: 0; top:0; right: 0; bottom: 0; margin: auto; box-shadow: 0 0 10px #666; z-index: 999;}
+.DlayerPopum .d-header{ width: 100%; height: 40px; font: 14px/40px "微软雅黑"; text-indent: 14px; border-bottom: 1px solid #eee; background: #F8F8F8;}
+.DlayerPopum .d-header .d-close{ float: right; text-indent: -13px;}
+.DlayerPopum .d-header .d-close i{ color: #666; cursor: pointer;}.DlayerPopum .header .close i:hover{ color: #000;}
+.DlayerPopum .d-content{ width: 100%; padding: 20px 0; font: 14px/25px "微软雅黑"; position: relative;}
+.DlayerPopum .d-content p{ padding:0 15px 0 80px;}
+.DlayerPopum .d-content .type{ width: 32px; height: 32px; color:#51A2E0; position: absolute; top:50%; left: 35px; margin:-16px 10px 0 0px;}
+.DlayerPopum .d-content .type-msg{ background: url(../assets/img/default.png) -96px center no-repeat;}
+.DlayerPopum .d-content .type-success{ background: url(../assets/img/default.png) -224px center no-repeat;}
+.DlayerPopum .d-content .type-error{ background: url(../assets/img/default.png) -192px center no-repeat;}
+.DlayerPopum .d-content .type-sure{ background: url(../assets/img/default.png) -160px center no-repeat;}
+.DlayerPopum .d-content .load-a{ background: url(../assets/img/loading-1.gif) no-repeat;}
+.DlayerPopum .d-btn{ width: 100%; height: 45px; font: 16px/45px "微软雅黑"; cursor: pointer; text-align: center; border-top: 1px solid #eee;}
+.DlayerPopum .btnSubmit{ width: 50%; float: left; display: inline; box-sizing: border-box;}
+.DlayerPopum .btnSubmit:nth-child(1){ border-right:1px solid #eee; }
+.Dloading{ height: 65px;}
+.Dloading img{ width: 37px; float: left; display: inline; position: absolute; left: 30px; top: 0; right: 0px; bottom: 0; margin: auto 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

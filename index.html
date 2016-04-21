@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App" ng-controller="appCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>anjularjs案例</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/Dlayer.css" rel="stylesheet">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="v-all">
+        <div class="v-left left"></div>
+        <div class="v-content left">
+            <div class="anjuTab">
+                <div class="line">
+                    <div class="lineTit left">高级查询</div>
+                    <div class="input-group left">
+                        <select class="form-control form-select left">
+                            <option value="phoneNum">电话</option>
+                        </select>
+                        <input type="text" ng-model="search" class="form-control form-int left" placeholder="输入学员姓名/电话号查询">
+					      <span class="input-group-btn">
+					        <a class="btn btn-default btn-primary"  ng-click="searchType()" >搜索</a>
+					      </span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="row rowBottom">
+                    <div class="col-xs-12 col-sm-4">
+                        <a ng-click="addStudent()">新增学员</a>
+                        <a ng-click="upLesson()">分配课程</a>
+                    </div>
+                </div>
+                <div class="row col-md-offset-0">
+                    <a href="form.html" class="btn btn-primary" >进入表单</a>
+                </div>
+                <table class="table table-bordered table-striped table-with-style">
+                    <tr>
+                        <td align="center"><input type="checkbox" ng-model="checkAll"></td>
+                        <td><b>姓名</b></td>
+                        <td><b>学历</b></td>
+                        <td><b>性别</b></td>
+                        <td><b>证件</b></td>
+                        <td><b>电话</b></td>
+                        <td><b>选择课程</b></td>
+                        <td><b>支付类型</b></td>
+                        <td><b>支付状态</b></td>
+                        <td><b>身份证后四位</b></td>
+                        <td><b>手机号后四位</b></td>
+                        <td><b>金额</b></td>
+                        <td><b>操作</b></td>
+                    </tr>
+                    <tr ng-repeat="data in datas | filter:search">
+                        <td align="center"><input type="checkbox" ng-checked="checkAll" ng-disabled="data.id==1 || data.id==3 || data.id==4"></td>
+                        <td class="blur" ng-bind="data.name"></td>
+                        <td ng-bind="data.degree | degreeType"></td>
+                        <td ng-bind="data.sex | sexType"></td>
+                        <td><img class="iconPic" src="images/icon.png" ng-mouseenter="iconType($event)" ng-mouseleave="cleariconType()"></td>
+                        <td ng-bind="data.nub"></td>
+                        <td ng-bind="data.course | classType"></td>
+                        <td ng-bind="data.pay | payType"></td>
+                        <td ng-bind="data.str | state"></td>
+                        <td ng-bind="data.idNub | idNubLast4"></td>
+                        <td ng-bind="data.nub | idNubLast4"></td>
+                        <td class="rde" ng-bind="data.price | currency"></td>
+                        <td><a>编辑</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 认证相关照片 -->
+        <div class="picbox" ng-show="isshow">
+            <div></div>
+            <div></div>
+            <span class="jian-icon"><img src="images/jian-icon.png"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <ng-include src="'include/edit-coach.html'" onload="addStudentList()"></ng-include>
+</body>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/ng-js/index.js"></script>
+
+</html>

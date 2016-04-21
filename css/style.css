@@ -1,0 +1,71 @@
+/*初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,img,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,span,textarea,p,blockquote,th,td,img {margin:0; padding:0; border:0;}
+body{ background: #fff; color:#898989; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{ text-decoration:none; color:#898989;}
+a:hover{ text-decoration:none;}
+ul,li{ list-style:none;}
+.left{ float:left;}.right{ float:right;}
+.clear{ clear:both;}
+.shadow{ width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.4); top:0; z-index: 10;}
+#loading{ width: 100%; height: 100%; z-index: 100; position: fixed; top:0; background:rgba(0,0,0,0.1) url(../images/loading.gif) center no-repeat;}
+.ion-close-round{ cursor: pointer;}
+.rde{ color: red;}
+.blur{ color: #4990E2;}
+input[type=button]{ outline: none!important;}
+
+/*头部*/
+.v-header{ width: 100%; height: 80px; background: #F8F8F8; position: fixed; top:0; border-bottom: solid 1px #E7E7E7;}
+.v-header h1{ background: url(../images/logo.png) 1% center no-repeat; background-size: 3.5%; font: 26px/80px "微软雅黑"; text-indent: 95px;}
+.v-all{ width: 100%; margin-top: 80px;}
+.v-left{ width: 10%; height: 100%; background: #F8F8F8; position: fixed; left: 0; border-right: solid 1px #E7E7E7;}
+.v-content{ width: 88%; margin-left: 11%;}
+.v-content .rowBottom{ margin-bottom: 20px;}
+.v-content .rowBottom a{ font-size: 12px; padding: 8px 15px; color: #fff; border-radius: 3px; background-color: #4990E2; border-color: #4990E2; margin-right: 5px;}
+.v-content .anjuTab{ width:100%; margin: 18px auto 0;}
+.v-content .anjuTab b{ color: #333;}
+
+.line{ margin-bottom: 20px;}
+.line .lineTit{ margin: 8px 15px 0 0;}
+.line .input-group{ width: 25%;}
+.line .input-group .form-select{ width: 25%;}
+.line .input-group .form-int{ width: 75%;}
+
+/*证件*/
+.iconPic{ cursor: pointer;}
+.picbox{ width: 530px; height: 230px; border: 1px solid #ccc; background: #eee; z-index: 999; position: absolute; left: -230px;top:-230px;}
+.picbox div{ float: left; display: inline; width: 240px; height: 190px; background: #fff; margin: 20px 10px 20px 10px;}
+.jian-icon{ position: relative; left: 50%; margin-left: -16px; top:-5px;}
+
+/*弹出层-新增学员*/
+.d-student-content{ width: 500px; height: 450px; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; background: #fff; box-shadow: 0 0 10px #333; border-radius: 3px;}
+.edit-alert-title { height: 40px; font-weight: bold; text-align: left; line-height: 40px; padding: 0 15px; background: #F8F8F8; border-bottom: solid 1px #DDD; position: relative;}
+.edit-alert-title h1{ width: 96%; font: 16px/40px "微软雅黑"; color: #333;}
+.edit-alert-title .cdClose{ cursor: pointer;}
+
+
+
+/*驾校账户*/
+.d-account-text{ width: 100%; text-align: center;letter-spacing: 3px;}
+.d-account-text h1{ font: 30px/30px "微软雅黑"; margin-top: 12%; }
+.d-account-text h1 .ion-android-time{ padding-right: 3px;}
+.d-account-text h1 .ion-ios-close{ font-weight: bold; padding-right: 3px;}
+.d-account-text h2{ font: 17px/30px "微软雅黑"; margin-bottom: 3%; }
+
+.d-load{ width: 700px; height: 60px; margin: 20px auto 60px;}
+.d-load div{ width: 30px; height: 30px; position: relative; font: 18px/30px "微软雅黑"; float: left; display: inline; text-align: center; border-radius: 100%}
+.d-load div i{ width: 200px; position: absolute; top: 35px; left: 50%; margin-left: -100px; font-size: 14px; }
+.d-load span{ width: 225px; height: 4px;  float: left; display: inline; margin: 15px 40px 0;}
+
+.d-change-password select.form-control{width:60%;float:left;}
+.d-change-password .succes{ font-size: 18px;}
+.d-change-password .protocol{ width: 700px; height: 180px; outline: none; padding: 5px; margin-top: 8%; overflow: auto; }
+
+.d-account-tab .student{ width: 48.5%; height:210px; padding: 30px 30px 10px; float: left; margin-bottom: 20px;}
+.d-account-tab .student dd{ margin-bottom: 10px;}
+.d-account-tab .student label{ margin: 0 5px; font-size: 25px; font-weight: normal;}
+
+
+
+
+
+
