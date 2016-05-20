@@ -41,6 +41,7 @@
                         <td><b>性别</b></td>
                         <td><b>证件</b></td>
                         <td><b>电话</b></td>
+                        <td><b>学课地点</b></td>
                         <td><b>选择课程</b></td>
                         <td><b>支付类型</b></td>
                         <td><b>支付状态</b></td>
@@ -50,12 +51,13 @@
                         <td><b>操作</b></td>
                     </tr>
                     <tr ng-repeat="data in datas | filter:search">
-                        <td align="center"><input type="checkbox" ng-checked="checkAll" ng-disabled="data.id==1 || data.id==3 || data.id==4"></td>
+                        <td align="center"><input type="checkbox" id="{{data.id}}" ng-click="updateSelection($event,data.id)" ng-checked="isSelected(data.id,data.region)" data-region="{{data.region}}" ng-disabled="data.id==5"></td>
                         <td class="blur" ng-bind="data.name"></td>
                         <td ng-bind="data.degree | degreeType"></td>
                         <td ng-bind="data.sex | sexType"></td>
                         <td><img class="iconPic" src="images/icon.png" ng-mouseenter="iconType($event)" ng-mouseleave="cleariconType()"></td>
                         <td ng-bind="data.nub"></td>
+                        <td ng-bind="data.region"></td>
                         <td ng-bind="data.course | classType"></td>
                         <td ng-bind="data.pay | payType"></td>
                         <td ng-bind="data.str | state"></td>
@@ -65,6 +67,7 @@
                         <td><a>编辑</a></td>
                     </tr>
                 </table>
+                <pre ng-bind="'选中的id为'+selected|json"></pre>
             </div>
         </div>
         <!-- 认证相关照片 -->
