@@ -12,6 +12,10 @@ function getQueryString(name) {
     return null;
 }
 
+/*接口同一返回数据列表函数*/
+function getListData(data){
+    return JSON.parse(data.result.pageData);
+}
 
 /*下载app 判断ios和android*/
 function downLoadApp(json){
